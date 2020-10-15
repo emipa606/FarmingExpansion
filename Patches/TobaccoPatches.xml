@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- JecsTobaccoAndCigarettes -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="Jecs_TobaccoLeaves"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>Jecs_TobaccoLeaves</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>Jecs_TobaccoLeaves</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- RimCuisine2SmokesandShroomsExpansion -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="RC2_RawTobacco"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>RC2_RawTobacco</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>RC2_RawTobacco</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- VGP Garden Medicine -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="RawTobacco"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>RawTobacco</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>RawTobacco</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--  Settings -->
+  <FE_LetterLabelWeed>Weeds in the field!</FE_LetterLabelWeed>
+  <FE_LetterWeed>Multiple weeds have sprouted in the fields. They are hardy and fast growing and will destroy all crops unless dealt with quickly.</FE_LetterWeed>
+  <FE_FungicideInfo>Treated with Fungicide</FE_FungicideInfo>
+  <FE_HerbicideInfo>Treated with Herbicide</FE_HerbicideInfo>
+  <FE_PesticideInfo>Treated with Pesticide</FE_PesticideInfo>
+  <FE_DDTInfo>Treated with DDT</FE_DDTInfo>
+  <FE_ChemicalSprayInfo>Treated with Chemical Spray</FE_ChemicalSprayInfo>
+
+</LanguageData>

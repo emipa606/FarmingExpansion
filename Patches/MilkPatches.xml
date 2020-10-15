@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Legacy Ark -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="RichMilk"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeFungicide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>RichMilk</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeFungicide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>RichMilk</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- Megafauna -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="SivatheriumMilk"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeFungicide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>SivatheriumMilk</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeFungicide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>SivatheriumMilk</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

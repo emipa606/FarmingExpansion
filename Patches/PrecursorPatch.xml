@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef/stockGenerators/li/thingDef[text()="Neutroamine"]/../..</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FE_BioChemicals</thingDef>
+        <countRange>25~100</countRange>
+      </li>
+    </value>
+  </Operation>
+</Patch>

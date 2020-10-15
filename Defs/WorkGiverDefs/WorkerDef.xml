@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorkGiverDef>
+    <defName>FE_UseChemicalWorkGiver</defName>
+    <label>use pesticide</label>
+    <giverClass>FarmingExpansion.UseChemicalWorkGiver</giverClass>
+    <workType>Growing</workType>
+    <priorityInType>25</priorityInType>
+    <verb>spray chemicals</verb>
+    <gerund>spraying chemicals</gerund>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>

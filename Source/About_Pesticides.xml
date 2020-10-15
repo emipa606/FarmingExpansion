@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Pesticides - [A18]</name>
+  <author>StoneWolf</author>
+  <targetVersion>0.18.1722</targetVersion>
+  <description>Adds a pesticide item which can be applied onto the crops. This is done to prevent blight from arising and to increase the plants' growth rate.</description>
+</ModMetaData>
+<!-- Do you ever feel like your <strike>puppets</strike> colonists seem to have too little to do? Have you ever wanted to turn your inhospitable tundra into a farmer's paradise?\nIn that case, this mod is for you! This mod implements pesticides which can be applied onto your crops. It may be as healthy to drink as the flammable contents of the sacks on a boomrat, but take comfort in that the blight and other pests detest it even more!-->
