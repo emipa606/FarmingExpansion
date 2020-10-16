@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Utility Supplements -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="USBlightKillLiquid"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <RecipeDef>
+          <defName>US_ChemicalSpray</defName>
+          <label>make 200 chemical spray (supplements)</label>
+          <description>Chemical Spray made from Utility Supplements</description>
+          <jobString>Making chemical spray.</jobString>
+          <effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Drug</soundWorking>
+          <workAmount>3500</workAmount>
+          <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+          <workSkill>Intellectual</workSkill>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>USBlightKillLiquid</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>USInsectKillLiquid</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>USPlantKillLiquid</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>Steel</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>ComponentIndustrial</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <FE_ChemicalSpray>200</FE_ChemicalSpray>
+          </products>
+          <recipeUsers>
+            <li>BiofuelRefinery</li>
+          </recipeUsers>
+          <researchPrerequisite>Fabrication</researchPrerequisite>
+          <skillRequirements>
+            <Crafting>12</Crafting>
+          </skillRequirements>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -2,7 +2,7 @@
 <Defs>
   <RecipeDef>
     <defName>FE_MakeFungicide</defName>
-    <label>make fungicide</label>
+    <label>make 20 fungicide</label>
     <description>Fungicide</description>
     <jobString>Making fungicide.</jobString>
     <effectWorking>Cook</effectWorking>
@@ -42,7 +42,7 @@
   </RecipeDef>
   <RecipeDef>
     <defName>FE_MakeHerbicide</defName>
-    <label>make herbicide</label>
+    <label>make 20 herbicide</label>
     <description>Herbicide</description>
     <jobString>Making herbicide.</jobString>
     <effectWorking>Cook</effectWorking>
@@ -82,7 +82,7 @@
   </RecipeDef>
   <RecipeDef>
     <defName>FE_MakePesticide</defName>
-    <label>make pesticide</label>
+    <label>make 20 pesticide</label>
     <description>Pesticide</description>
     <jobString>Making pesticide.</jobString>
     <effectWorking>Cook</effectWorking>
@@ -122,7 +122,7 @@
   </RecipeDef>
   <RecipeDef>
     <defName>FE_MakeDDT</defName>
-    <label>make ddt</label>
+    <label>make 60 DDT</label>
     <description>DDT</description>
     <jobString>Making DDT.</jobString>
     <effectWorking>Cremate</effectWorking>
@@ -146,6 +146,14 @@
         </filter>
         <count>3</count>
       </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
     </ingredients>
     <products>
       <FE_DDT>60</FE_DDT>
@@ -159,8 +167,55 @@
     </skillRequirements>
   </RecipeDef>
   <RecipeDef>
+    <defName>FE_BioChemicals</defName>
+    <label>make 3 bio chemicals</label>
+    <description>BioChemicals for the production of chemical spray</description>
+    <jobString>Making chemical spray.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FE_Fungicide</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FE_Herbicide</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FE_Pesticide</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+    </ingredients>
+    <products>
+      <FE_BioChemicals>3</FE_BioChemicals>
+    </products>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+    <researchPrerequisite>Fabrication</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <RecipeDef>
     <defName>FE_ChemicalSpray</defName>
-    <label>make chemical spray</label>
+    <label>make 60 chemical spray</label>
     <description>Chemical Spray</description>
     <jobString>Making chemical spray.</jobString>
     <effectWorking>Cook</effectWorking>
@@ -184,6 +239,22 @@
           </thingDefs>
         </filter>
         <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
       </li>
     </ingredients>
     <products>
