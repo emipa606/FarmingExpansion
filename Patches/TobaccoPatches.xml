@@ -63,4 +63,88 @@
       </operations>
     </match>
   </Operation>
+  <!-- Apothecary -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="AYGarlicBulb"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>AYGarlicBulb</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>AYGarlicBulb</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- Vanilla Plants Expanded -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="VCE_RawOnion"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>VCE_RawOnion</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>VCE_RawOnion</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- 【ZP】 Rice cultivating civilization -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="ZP_RawOnion"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>ZP_RawOnion</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>ZP_RawOnion</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- RimCuisine 2 Core -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="RC2_RawOnion"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>RC2_RawOnion</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakePesticide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>RC2_RawOnion</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
 </Patch>

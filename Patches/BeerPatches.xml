@@ -21,4 +21,88 @@
       </operations>
     </match>
   </Operation>
+  <!-- VGP Garden Drinks -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="vodka"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeHerbicide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>vodka</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeHerbicide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>vodka</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- RimCuisine 2: Bottling and Booze Expansion -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="RC2_Vodka"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeHerbicide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>RC2_Vodka</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeHerbicide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>RC2_Vodka</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- CuproPanda's Drinks -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="CPD_Vodka"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeHerbicide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>CPD_Vodka</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeHerbicide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>CPD_Vodka</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- Vanilla Brewing Expanded -->
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="VBE_Vodka"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeHerbicide"]/ingredients/li/filter/thingDefs</xpath>
+          <value>
+            <li>VBE_Vodka</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FE_MakeHerbicide"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>VBE_Vodka</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
 </Patch>
