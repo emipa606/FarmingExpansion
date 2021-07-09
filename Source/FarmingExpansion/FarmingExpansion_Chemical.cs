@@ -2,10 +2,10 @@
 
 namespace FarmingExpansion
 {
-    public class FarmingExpansion_Chemical : ThingDef {
+    public class FarmingExpansion_Chemical : ThingDef
+    {
+        public float PercentagePointSpeedChange;
 
-		public float PercentagePointSpeedChange;
-
-		public float PercentagePointYeildChange;
-	}
+        public float PercentagePointYeildChange;
+    }
 }

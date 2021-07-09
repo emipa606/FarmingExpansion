@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Farming Expansion</name>
   <packageId>Mlie.FarmingExpansion</packageId>
@@ -7,6 +7,7 @@
   <supportedVersions>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -19,38 +20,66 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>This mod adds events and chemicals to the farmers of RimWorld.
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
 
-- Events added:
-	* Pests - Insects that eat up all your crops
-	* Weeds - Quick growing plants that destroy your crops
+This mod adds events and chemicals to the farmers of RimWorld.
+
+[b]Events added[/b]
+[list]
+[*]Pests - Insects that eat up all your crops
+[*]Weeds - Quick growing plants that destroy your crops
+[/list]
 	
-- Chemicals added:
-	* Pesticide (Tribal) - Prevents the Pests-event
-	* Herbicide (Tribal) - Prevents the Weeds-event
-	* Fungicide (Tribal) - Prevents the vanilla Blight-event
-	* DDT (Industrial) - Prevents all events but lowers yeild
-	* Chemical Spray (Spacer) - Prevents all events and increases yield and growthspeed
+[b]Chemicals added[/b]
+[list]
+[*]Pesticide (Tribal) - Prevents the Pests-event
+[*]Herbicide (Tribal) - Prevents the Weeds-event
+[*]Fungicide (Tribal) - Prevents the vanilla Blight-event
+[*]DDT (Industrial) - Prevents all events but lowers yeild
+[*]Chemical Spray (Spacer) - Prevents all events and increases yield and growthspeed
+[/list]
 
-- Will use resources from these mods if they are loaded:
-	* Legacy Ark - https://steamcommunity.com/sharedfiles/filedetails/?id=2070686241
-	* VGP Garden Medicine - https://steamcommunity.com/sharedfiles/filedetails/?id=2007063140
-	* Jecs Tobacco and Cigarettes - https://steamcommunity.com/sharedfiles/filedetails/?id=2208107297
-	* Megafauna - https://steamcommunity.com/sharedfiles/filedetails/?id=1055485938
-	* Survivalist's Additions - https://steamcommunity.com/sharedfiles/filedetails/?id=1550854139
-	* RimCuisine 2: Smokes and Shrooms Expansion - https://steamcommunity.com/sharedfiles/filedetails/?id=2069579592
+[b]Will use resources from these mods if they are loaded[/b]
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2070686241]Legacy Ark[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2007063140]VGP Garden Medicine[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2208107297]Jecs Tobacco and Cigarettes[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1055485938]Megafauna[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1550854139]Survivalist&apos;s Additions[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2069579592]RimCuisine 2: Smokes and Shrooms Expansion[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2195065488]Utility supplements[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2195469123]Apothecary[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2134308522]Vanilla Plants Expanded[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2056631665]【ZP】Rice cultivating civilization[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2167582651]VGP Garden Drinks[/url]
+[*][url=https://steamcommunity.com/workshop/filedetails/?id=1833592062]RimCuisine 2[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2069596932]RimCuisine 2: Bottling and Booze Expansion[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1543172057]CuproPanda&apos;s Drinks[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2186560858]Vanilla Brewing Expanded[/url]
+[/list]
 	
----
-
 Its based on StoneWolfs Pesticides-mod:
 https://steamcommunity.com/sharedfiles/filedetails/?id=1261250346
 and Nandonalts Pests-mod:
 https://ludeon.com/forums/index.php?topic=29596.0
 
-Support-chat:
-https://invite.gg/mlie
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/PawnBadgeCC][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 
-Non-steam version:
-https://github.com/emipa606/FarmingExpansion
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
 </description>
 </ModMetaData>
+

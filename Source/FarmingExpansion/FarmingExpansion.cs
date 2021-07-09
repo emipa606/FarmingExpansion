@@ -1,22 +1,19 @@
-﻿using Verse;
+﻿using System.Reflection;
 using HarmonyLib;
-using System.Reflection;
-using System.Collections.Generic;
+using Verse;
 
 namespace FarmingExpansion
 {
-
     [StaticConstructorOnStartup]
-	static class FarmingExpansion {
-
-
-		/// <summary>
-		/// This method is called on mod-startup
-		/// </summary>
-		static FarmingExpansion() {
-
-			var harmony = new Harmony("Mlie.FarmingExpansion");
-			harmony.PatchAll(Assembly.GetExecutingAssembly());
-		}
-	}
+    internal static class FarmingExpansion
+    {
+        /// <summary>
+        ///     This method is called on mod-startup
+        /// </summary>
+        static FarmingExpansion()
+        {
+            var harmony = new Harmony("Mlie.FarmingExpansion");
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
+        }
+    }
 }

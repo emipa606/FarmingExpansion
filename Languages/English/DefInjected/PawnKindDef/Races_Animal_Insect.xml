@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <FE_CropEaterInsect.label>Cropeater</FE_CropEaterInsect.label>
   <FE_CropEaterInsect.labelPlural>Cropeaters</FE_CropEaterInsect.labelPlural>
   <FE_CropEaterInsect.lifeStages.0.label>Cropeater</FE_CropEaterInsect.lifeStages.0.label>
@@ -25,6 +24,4 @@
   <FE_CropEaterInsect.labelMalePlural>male Cropeaters</FE_CropEaterInsect.labelMalePlural>
   <FE_CropEaterInsect.labelFemale>female Cropeater</FE_CropEaterInsect.labelFemale>
   <FE_CropEaterInsect.labelFemalePlural>female Cropeaters</FE_CropEaterInsect.labelFemalePlural>
-
-
 </LanguageData>
