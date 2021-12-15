@@ -2,18 +2,17 @@
 using HarmonyLib;
 using Verse;
 
-namespace FarmingExpansion
+namespace FarmingExpansion;
+
+[StaticConstructorOnStartup]
+internal static class FarmingExpansion
 {
-    [StaticConstructorOnStartup]
-    internal static class FarmingExpansion
+    /// <summary>
+    ///     This method is called on mod-startup
+    /// </summary>
+    static FarmingExpansion()
     {
-        /// <summary>
-        ///     This method is called on mod-startup
-        /// </summary>
-        static FarmingExpansion()
-        {
-            var harmony = new Harmony("Mlie.FarmingExpansion");
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
-        }
+        var harmony = new Harmony("Mlie.FarmingExpansion");
+        harmony.PatchAll(Assembly.GetExecutingAssembly());
     }
 }

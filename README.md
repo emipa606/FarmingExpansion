@@ -1,6 +1,6 @@
 # FarmingExpansion
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 
 This mod adds events and chemicals to the farmers of RimWorld.
@@ -31,7 +31,7 @@ This mod adds events and chemicals to the farmers of RimWorld.
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2007063140]VGP Garden Medicine
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2208107297]Jecs Tobacco and Cigarettes
 - https://steamcommunity.com/sharedfiles/filedetails/?id=1055485938]Megafauna
-- https://steamcommunity.com/sharedfiles/filedetails/?id=1550854139]Survivalist&apos;s Additions
+- https://steamcommunity.com/sharedfiles/filedetails/?id=1550854139]Survivalist's Additions
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2069579592]RimCuisine 2: Smokes and Shrooms Expansion
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2195065488]Utility supplements
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2195469123]Apothecary
@@ -40,7 +40,7 @@ This mod adds events and chemicals to the farmers of RimWorld.
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2167582651]VGP Garden Drinks
 - https://steamcommunity.com/workshop/filedetails/?id=1833592062]RimCuisine 2
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2069596932]RimCuisine 2: Bottling and Booze Expansion
-- https://steamcommunity.com/sharedfiles/filedetails/?id=1543172057]CuproPanda&apos;s Drinks
+- https://steamcommunity.com/sharedfiles/filedetails/?id=1543172057]CuproPanda's Drinks
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2186560858]Vanilla Brewing Expanded
 
 
@@ -50,17 +50,15 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1261250346
 and Nandonalts Pests-mod:
 https://ludeon.com/forums/index.php?topic=29596.0
 
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/PawnBadgeCC]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
+
+![Image](https://i.imgur.com/O0IIlYj.png)
+
+Since modding is just a hobby for me I expect no donations to keep modding. If you still want to show your support you can gift me anything from my https://store.steampowered.com/wishlist/id/Mlie]Wishlist or buy me a cup of tea.
+
+https://ko-fi.com/G2G55DDYD]![Image](https://i.imgur.com/Utx6OIH.png)
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 

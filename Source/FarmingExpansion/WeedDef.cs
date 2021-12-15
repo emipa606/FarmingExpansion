@@ -3,33 +3,32 @@ using System.Linq;
 using RimWorld;
 using Verse;
 
-namespace FarmingExpansion
-{
-    internal class WeedDef : Plant
-    {
-        public override void TickLong()
-        {
-            base.TickLong();
-            if (Rand.Range(-1, 5) < 0)
-            {
-                TryReproduceNow();
-            }
-        }
+namespace FarmingExpansion;
 
-        public void TryReproduceNow()
+internal class WeedDef : Plant
+{
+    public override void TickLong()
+    {
+        base.TickLong();
+        if (Rand.Range(-1, 5) < 0)
         {
-            GenRadial.ProcessEquidistantCells(Position, 4f, delegate(List<IntVec3> cells)
-            {
-                if (!(from x in cells
+            TryReproduceNow();
+        }
+    }
+
+    public void TryReproduceNow()
+    {
+        GenRadial.ProcessEquidistantCells(Position, 4f, delegate(List<IntVec3> cells)
+        {
+            if (!(from x in cells
                     where IncidentWorker_Weeds.GetFirstWeedableNowPlant(x, Map) != null
                     select x).TryRandomElement(out var c))
-                {
-                    return false;
-                }
+            {
+                return false;
+            }
 
-                IncidentWorker_Weeds.MakePlantWeed(c, Map);
-                return true;
-            }, Map);
-        }
+            IncidentWorker_Weeds.MakePlantWeed(c, Map);
+            return true;
+        }, Map);
     }
 }

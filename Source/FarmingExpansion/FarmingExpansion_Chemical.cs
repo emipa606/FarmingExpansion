@@ -1,11 +1,10 @@
 ﻿using Verse;
 
-namespace FarmingExpansion
-{
-    public class FarmingExpansion_Chemical : ThingDef
-    {
-        public float PercentagePointSpeedChange;
+namespace FarmingExpansion;
 
-        public float PercentagePointYeildChange;
-    }
+public class FarmingExpansion_Chemical : ThingDef
+{
+    public float PercentagePointSpeedChange;
+
+    public float PercentagePointYeildChange;
 }
