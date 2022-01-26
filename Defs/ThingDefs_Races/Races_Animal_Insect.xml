@@ -27,15 +27,17 @@
       <MarketValue>50</MarketValue>
       <LeatherAmount>0</LeatherAmount>
     </statBases>
-    <verbs>
+    <tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>2.00</defaultCooldownTime>
-        <meleeDamageBaseAmount>1</meleeDamageBaseAmount>
-        <meleeDamageDef>Bite</meleeDamageDef>
+        <label>mandibles</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
       </li>
-    </verbs>
+    </tools>
     <race>
       <body>BeetleLike</body>
       <baseBodySize>0.05</baseBodySize>
