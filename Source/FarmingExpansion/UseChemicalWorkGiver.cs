@@ -71,60 +71,52 @@ public class UseChemicalWorkGiver : WorkGiver_Grower
             return false;
         }
 
-        if (c.GetZone(pawn.Map) is Zone_Growing growingZone)
+        if (c.GetZone(pawn.Map) is not Zone_Growing growingZone)
         {
-            var possibleWorkCellsInZone = growingZone.Cells.Count;
-
-            // Checks how many plants other colonists are in the process of applying chemicals on within the same zone. This prevents pawns from trying to apply pesticide
-            // when other pawns already have enough pesticide for the whole zone.
-            bool validator(Job job)
-            {
-                if (job.targetA.Cell.GetZone(pawn.Map) == growingZone)
-                {
-                    return true;
-                }
-
-                return false;
-            }
-
-            void action(Job job, Pawn otherColonist)
-            {
-                possibleWorkCellsInZone -= PlantsOtherColonistsApplyPesticideOnto(otherColonist, job.count);
-            }
-
-            Utility.DoOnOtherPawnsWithSameJobQueuedOrActive(pawn, typeof(UseChemicalJobDriver), validator, action);
-
-            foreach (var cellInZone in growingZone.Cells)
-            {
-                var plantOnCellInZone = cellInZone.GetPlant(pawn.Map);
-
-                // Removes unusable cells from the count of possible work cells
-                if (plantOnCellInZone != null && plantOnCellInZone.def == growingZone.GetPlantDefToGrow() &&
-                    Utility.ChemicalOkayToUse(closestChemical.def.defName, plantOnCellInZone))
-                {
-                    continue;
-                }
-
-                possibleWorkCellsInZone--;
-            }
-
-            if (possibleWorkCellsInZone < 0)
-            {
-                possibleWorkCellsInZone = 0;
-            }
-
-            // Apply chemicals on as many tiles as possible to the best of the pawn's ability
-            jobCount = possibleWorkCellsInZone >= pawn.carryTracker.AvailableStackSpace(closestChemical.def)
-                ? pawn.carryTracker.AvailableStackSpace(closestChemical.def)
-                : possibleWorkCellsInZone;
+            return jobCount > 0;
         }
 
-        if (jobCount > 0)
+        var possibleWorkCellsInZone = growingZone.Cells.Count;
+
+        // Checks how many plants other colonists are in the process of applying chemicals on within the same zone. This prevents pawns from trying to apply pesticide
+        // when other pawns already have enough pesticide for the whole zone.
+        bool validator(Job job)
         {
-            return true;
+            return job.targetA.Cell.GetZone(pawn.Map) == growingZone;
         }
 
-        return false;
+        void action(Job job, Pawn otherColonist)
+        {
+            possibleWorkCellsInZone -= PlantsOtherColonistsApplyPesticideOnto(otherColonist, job.count);
+        }
+
+        Utility.DoOnOtherPawnsWithSameJobQueuedOrActive(pawn, typeof(UseChemicalJobDriver), validator, action);
+
+        foreach (var cellInZone in growingZone.Cells)
+        {
+            var plantOnCellInZone = cellInZone.GetPlant(pawn.Map);
+
+            // Removes unusable cells from the count of possible work cells
+            if (plantOnCellInZone != null && plantOnCellInZone.def == growingZone.GetPlantDefToGrow() &&
+                Utility.ChemicalOkayToUse(closestChemical.def.defName, plantOnCellInZone))
+            {
+                continue;
+            }
+
+            possibleWorkCellsInZone--;
+        }
+
+        if (possibleWorkCellsInZone < 0)
+        {
+            possibleWorkCellsInZone = 0;
+        }
+
+        // Apply chemicals on as many tiles as possible to the best of the pawn's ability
+        jobCount = possibleWorkCellsInZone >= pawn.carryTracker.AvailableStackSpace(closestChemical.def)
+            ? pawn.carryTracker.AvailableStackSpace(closestChemical.def)
+            : possibleWorkCellsInZone;
+
+        return jobCount > 0;
     }
 
     public override Job JobOnCell(Pawn pawn, IntVec3 cell, bool forced = false)

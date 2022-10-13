@@ -22,12 +22,7 @@ public class UseChemicalJobDriver : JobDriver
     public override bool TryMakePreToilReservations(bool errorOnFailed)
     {
         // Reserve the plant and the pesticide
-        if (pawn.Reserve(job.targetA, job) && pawn.Reserve(job.targetB, job))
-        {
-            return true;
-        }
-
-        return false;
+        return pawn.Reserve(job.targetA, job) && pawn.Reserve(job.targetB, job);
     }
 
     // Explains how the job will be done - step by step (every yield keyword equals one "step")

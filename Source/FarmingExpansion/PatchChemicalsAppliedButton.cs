@@ -25,15 +25,7 @@ internal static class PatchChemicalsAppliedButton
             defaultLabel = "Apply Chemicals",
             defaultDesc = "The pawns will, if possible, apply chemicals onto this zone's plants",
             hotKey = KeyBindingDefOf.Misc1,
-            isActive = () =>
-            {
-                if (UseChemicalWorkGiver.IsGrowingZonesWithChemicalList.Contains(__instance))
-                {
-                    return true;
-                }
-
-                return false;
-            },
+            isActive = () => UseChemicalWorkGiver.IsGrowingZonesWithChemicalList.Contains(__instance),
             icon = ContentFinder<Texture2D>.Get("UI/Commands/ApplyChemicals"),
             toggleAction = delegate
             {

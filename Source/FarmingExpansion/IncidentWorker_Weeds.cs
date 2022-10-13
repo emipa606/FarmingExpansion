@@ -121,12 +121,7 @@ public class IncidentWorker_Weeds : IncidentWorker_CropBlight
             return false;
         }
 
-        if (ChemicalAddedCheck.ChemicalSprayAppliedOnto.Contains(plant))
-        {
-            return false;
-        }
-
-        return true;
+        return !ChemicalAddedCheck.ChemicalSprayAppliedOnto.Contains(plant);
     }
 
     private bool TryFindRandomWeedablePlant(Map map, out Plant plant)

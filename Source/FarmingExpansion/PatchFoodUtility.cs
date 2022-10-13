@@ -5,7 +5,7 @@ using Verse;
 namespace FarmingExpansion;
 
 [HarmonyPatch(typeof(FoodUtility))]
-[HarmonyPatch("TryFindBestFoodSourceFor_NewTemp")]
+[HarmonyPatch("TryFindBestFoodSourceFor")]
 internal static class PatchFoodUtility
 {
     [HarmonyPostfix]
