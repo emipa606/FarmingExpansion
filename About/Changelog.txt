@@ -1,5 +1,9 @@
 # Changelog for FarmingExpansion
 
+1.4.2 - The jobdef for spraying crops had the wrong defname, seems to have never worked.
+Used DeepL to update translations for ChineseSimplified, French, German
+
+
 1.4.1 - Mod updated for 1.4 and passed autotests
 
 

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <JobDef>
-    <defName>FE_UseChemicalJobDriver</defName>
+    <defName>FE_UseChemicalJobDef</defName>
     <driverClass>FarmingExpansion.UseChemicalJobDriver</driverClass>
     <reportString>spraying TargetA.</reportString>
   </JobDef>
