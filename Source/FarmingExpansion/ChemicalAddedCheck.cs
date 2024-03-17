@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using RimWorld;
 using Verse;
@@ -6,7 +7,7 @@ using Verse;
 namespace FarmingExpansion;
 
 /// <summary>
-///     Checks every minute (3600 ticks) if all of the chemical-applied plants still exists. If not, removes the plant's
+///     Checks every minute (3600 ticks) if all the chemical-applied plants still exists. If not, removes the plant's
 ///     entry in the Dictionary
 ///     containing all chemical-applied plants so that chemicals can be applied onto a new plant on that cell on that map
 /// </summary>
@@ -30,11 +31,11 @@ internal class ChemicalAddedCheck : GameComponent
 
     public override void StartedNewGame()
     {
-        FungicideAppliedOnto = new List<Plant>();
-        HerbicideAppliedOnto = new List<Plant>();
-        PesticideAppliedOnto = new List<Plant>();
-        DDTAppliedOnto = new List<Plant>();
-        ChemicalSprayAppliedOnto = new List<Plant>();
+        FungicideAppliedOnto = [];
+        HerbicideAppliedOnto = [];
+        PesticideAppliedOnto = [];
+        DDTAppliedOnto = [];
+        ChemicalSprayAppliedOnto = [];
     }
 
     /// <summary>
@@ -58,7 +59,7 @@ internal class ChemicalAddedCheck : GameComponent
                          ChemicalSprayAppliedOnto
                      })
             {
-                foreach (var plant in list)
+                foreach (var plant in list.ToList())
                 {
                     // If the same plant is not on the cell, this map does contain that plant
                     if (plant == null || plant != plant.Position.GetPlant(plant.Map))

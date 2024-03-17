@@ -12,7 +12,6 @@ internal static class FarmingExpansion
     /// </summary>
     static FarmingExpansion()
     {
-        var harmony = new Harmony("Mlie.FarmingExpansion");
-        harmony.PatchAll(Assembly.GetExecutingAssembly());
+        new Harmony("Mlie.FarmingExpansion").PatchAll(Assembly.GetExecutingAssembly());
     }
 }

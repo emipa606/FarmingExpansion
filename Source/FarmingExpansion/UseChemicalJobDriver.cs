@@ -15,7 +15,7 @@ public class UseChemicalJobDriver : JobDriver
     private Plant Plant => (Plant)job.GetTarget(TargetPlant).Thing;
 
     //A generic representation of the objects used - only used as a parameter
-    // TargetIndex.A & B can be used directly but it can be a bit ambiguous
+    // TargetIndex.A & B can be used directly, but it can be a bit ambiguous
     private TargetIndex TargetPlant => TargetIndex.A;
     private TargetIndex TargetChemical => TargetIndex.B;
 

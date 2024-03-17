@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>FE_CropEaters</defName>
+    <label>crop eaters</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>FarmingExpansion.IncidentWorker_CropEaters</workerClass>
+    <baseChance>0.2</baseChance>
+    <minRefireDays>30</minRefireDays>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>FE_Weeds</defName>
+    <label>weeds</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>FarmingExpansion.IncidentWorker_Weeds</workerClass>
+    <baseChance>0.1</baseChance>
+    <minRefireDays>40</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+  </IncidentDef>
+</Defs>

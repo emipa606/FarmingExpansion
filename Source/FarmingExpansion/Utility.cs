@@ -25,7 +25,7 @@ internal static class Utility
                 action(otherColonist.jobs.curDriver.job, otherColonist);
             }
 
-            // This Linq statement returns a list containing all of the apply pesticide jobs. It is a list because pawns player-driven priorisation commands can queue up
+            // This Linq statement returns a list containing all the apply pesticide jobs. It is a list because pawns player-driven priorisation commands can queue up
             // jobs meaning that there can be several apply pesticide jobs
             var queuedJobsOfSpecifiedType =
                 otherColonist.jobs.jobQueue.Where(j => j.job.def.driverClass == jobType);

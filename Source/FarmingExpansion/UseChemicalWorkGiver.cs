@@ -7,7 +7,7 @@ namespace FarmingExpansion;
 
 public class UseChemicalWorkGiver : WorkGiver_Grower
 {
-    public static List<Zone_Growing> IsGrowingZonesWithChemicalList = new List<Zone_Growing>();
+    public static List<Zone_Growing> IsGrowingZonesWithChemicalList = [];
     private Thing closestChemical;
 
     private int jobCount;
@@ -78,18 +78,6 @@ public class UseChemicalWorkGiver : WorkGiver_Grower
 
         var possibleWorkCellsInZone = growingZone.Cells.Count;
 
-        // Checks how many plants other colonists are in the process of applying chemicals on within the same zone. This prevents pawns from trying to apply pesticide
-        // when other pawns already have enough pesticide for the whole zone.
-        bool validator(Job job)
-        {
-            return job.targetA.Cell.GetZone(pawn.Map) == growingZone;
-        }
-
-        void action(Job job, Pawn otherColonist)
-        {
-            possibleWorkCellsInZone -= PlantsOtherColonistsApplyPesticideOnto(otherColonist, job.count);
-        }
-
         Utility.DoOnOtherPawnsWithSameJobQueuedOrActive(pawn, typeof(UseChemicalJobDriver), validator, action);
 
         foreach (var cellInZone in growingZone.Cells)
@@ -117,6 +105,18 @@ public class UseChemicalWorkGiver : WorkGiver_Grower
             : possibleWorkCellsInZone;
 
         return jobCount > 0;
+
+        // Checks how many plants other colonists are in the process of applying chemicals on within the same zone. This prevents pawns from trying to apply pesticide
+        // when other pawns already have enough pesticide for the whole zone.
+        bool validator(Job job)
+        {
+            return job.targetA.Cell.GetZone(pawn.Map) == growingZone;
+        }
+
+        void action(Job job, Pawn otherColonist)
+        {
+            possibleWorkCellsInZone -= PlantsOtherColonistsApplyPesticideOnto(otherColonist, job.count);
+        }
     }
 
     public override Job JobOnCell(Pawn pawn, IntVec3 cell, bool forced = false)
@@ -178,12 +178,12 @@ public class UseChemicalWorkGiver : WorkGiver_Grower
     /// </summary>
     private Thing FindChemical(Pawn pawn, ThingDef chemicalDef)
     {
+        return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(chemicalDef),
+            PathEndMode.ClosestTouch, TraverseParms.For(pawn), 9999f, predicate);
+
         bool predicate(Thing x)
         {
             return !x.IsForbidden(pawn) && pawn.CanReserve(x);
         }
-
-        return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(chemicalDef),
-            PathEndMode.ClosestTouch, TraverseParms.For(pawn), 9999f, predicate);
     }
 }

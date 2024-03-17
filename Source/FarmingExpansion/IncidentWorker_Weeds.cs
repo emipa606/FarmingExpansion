@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using RimWorld;
 using Verse;
@@ -12,19 +11,19 @@ public class IncidentWorker_Weeds : IncidentWorker_CropBlight
 
     private static readonly ThingDef weedDef = DefDatabase<ThingDef>.GetNamedSilentFail(WeedDefName);
 
-    private static readonly SimpleCurve WeedChancePerRadius = new SimpleCurve
-    {
+    private static readonly SimpleCurve WeedChancePerRadius =
+    [
         new CurvePoint(0f, 1f),
         new CurvePoint(8f, 1f),
         new CurvePoint(11f, 0.3f)
-    };
+    ];
 
-    private static readonly SimpleCurve RadiusFactorPerPointsCurve = new SimpleCurve
-    {
+    private static readonly SimpleCurve RadiusFactorPerPointsCurve =
+    [
         new CurvePoint(25f, 0.6f),
         new CurvePoint(100f, 1f),
         new CurvePoint(500f, 2f)
-    };
+    ];
 
     protected override bool TryExecuteWorker(IncidentParms parms)
     {
@@ -56,7 +55,7 @@ public class IncidentWorker_Weeds : IncidentWorker_CropBlight
 
         SendStandardLetter("FE_LetterLabelWeed".Translate(new NamedArgument(plant.def, "PLANTDEF")),
             "FE_LetterWeed".Translate(new NamedArgument(plant.def, "PLANTDEF")), LetterDefOf.NegativeEvent, parms,
-            new TargetInfo(plant.Position, map), Array.Empty<NamedArgument>());
+            new TargetInfo(plant.Position, map), []);
         return true;
     }
 
