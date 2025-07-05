@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: weeds -->
+  <FE_Weed.label>weeds</FE_Weed.label>
+  <!-- EN: Small weeds, hardy and fast growing. These will destroy all other plants if not removed quickly. -->
+  <FE_Weed.description>Small weeds, hardy and fast growing. These will destroy all other plants if not removed quickly.</FE_Weed.description>
+</LanguageData>

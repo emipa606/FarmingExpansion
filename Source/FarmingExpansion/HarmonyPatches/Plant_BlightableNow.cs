@@ -3,12 +3,10 @@ using RimWorld;
 
 namespace FarmingExpansion;
 
-[HarmonyPatch(typeof(Plant))]
-[HarmonyPatch("BlightableNow", MethodType.Getter)]
-internal static class PatchBlightableNow
+[HarmonyPatch(typeof(Plant), nameof(Plant.BlightableNow), MethodType.Getter)]
+internal static class Plant_BlightableNow
 {
-    [HarmonyPostfix]
-    public static void ChemicalsPreventBlight(Plant __instance, ref bool __result)
+    public static void Postfix(Plant __instance, ref bool __result)
     {
         if (!__result)
         {

@@ -5,12 +5,10 @@ using Verse;
 namespace FarmingExpansion;
 
 // This changes the growth rate of the plant
-[HarmonyPatch(typeof(Plant))]
-[HarmonyPatch("GrowthRate", MethodType.Getter)]
-internal static class PatchChemicalGrowth
+[HarmonyPatch(typeof(Plant), nameof(Plant.GrowthRate), MethodType.Getter)]
+internal static class Plant_GrowthRate
 {
-    [HarmonyPostfix]
-    public static void ImprovePlantSpeed(Plant __instance, ref float __result)
+    public static void Postfix(Plant __instance, ref float __result)
     {
         float speedChange = 0;
         if (ChemicalAddedCheck.FungicideAppliedOnto.Contains(__instance))

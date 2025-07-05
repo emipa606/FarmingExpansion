@@ -55,7 +55,7 @@ public class IncidentWorker_Weeds : IncidentWorker_CropBlight
 
         SendStandardLetter("FE_LetterLabelWeed".Translate(new NamedArgument(plant.def, "PLANTDEF")),
             "FE_LetterWeed".Translate(new NamedArgument(plant.def, "PLANTDEF")), LetterDefOf.NegativeEvent, parms,
-            new TargetInfo(plant.Position, map), []);
+            new TargetInfo(plant.Position, map));
         return true;
     }
 
@@ -83,7 +83,7 @@ public class IncidentWorker_Weeds : IncidentWorker_CropBlight
         return null;
     }
 
-    public static bool IsWeedabe(Plant plant)
+    private static bool IsWeedabe(Plant plant)
     {
         if (plant.def.defName == WeedDefName)
         {

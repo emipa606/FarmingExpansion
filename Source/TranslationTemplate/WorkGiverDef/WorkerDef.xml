@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: use pesticide -->
+  <FE_UseChemicalWorkGiver.label>use pesticide</FE_UseChemicalWorkGiver.label>
+  <!-- EN: spraying chemicals -->
+  <FE_UseChemicalWorkGiver.gerund>spraying chemicals</FE_UseChemicalWorkGiver.gerund>
+  <!-- EN: spray chemicals -->
+  <FE_UseChemicalWorkGiver.verb>spray chemicals</FE_UseChemicalWorkGiver.verb>
+</LanguageData>

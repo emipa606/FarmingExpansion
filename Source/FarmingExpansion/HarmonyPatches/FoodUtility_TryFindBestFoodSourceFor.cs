@@ -4,12 +4,10 @@ using Verse;
 
 namespace FarmingExpansion;
 
-[HarmonyPatch(typeof(FoodUtility))]
-[HarmonyPatch("TryFindBestFoodSourceFor")]
-internal static class PatchFoodUtility
+[HarmonyPatch(typeof(FoodUtility), nameof(FoodUtility.TryFindBestFoodSourceFor))]
+internal static class FoodUtility_TryFindBestFoodSourceFor
 {
-    [HarmonyPostfix]
-    public static void ForceBugsToEatCrops(ref Pawn eater, ref Thing foodSource, ref bool __result)
+    public static void Postfix(ref Pawn eater, ref Thing foodSource, ref bool __result)
     {
         if (eater.def.defName != "FE_CropEaterInsect" || foodSource == null)
         {

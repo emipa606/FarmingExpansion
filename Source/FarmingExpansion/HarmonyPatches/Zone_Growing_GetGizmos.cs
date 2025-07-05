@@ -6,12 +6,10 @@ using Verse;
 
 namespace FarmingExpansion;
 
-[HarmonyPatch(typeof(Zone_Growing))]
-[HarmonyPatch("GetGizmos")]
-internal static class PatchChemicalsAppliedButton
+[HarmonyPatch(typeof(Zone_Growing), nameof(Zone_Growing.GetGizmos))]
+internal static class Zone_Growing_GetGizmos
 {
-    [HarmonyPostfix]
-    public static void AddChemicalAllowedButton(Zone_Growing __instance, ref IEnumerable<Gizmo> __result)
+    public static void Postfix(Zone_Growing __instance, ref IEnumerable<Gizmo> __result)
     {
         var newList = new List<Gizmo>();
 

@@ -4,12 +4,10 @@ using Verse;
 
 namespace FarmingExpansion;
 
-[HarmonyPatch(typeof(Plant))]
-[HarmonyPatch("YieldNow")]
-internal static class PatchChemicalYield
+[HarmonyPatch(typeof(Plant), nameof(Plant.YieldNow))]
+internal static class Plant_YieldNow
 {
-    [HarmonyPostfix]
-    public static void ImprovePlantYield(Plant __instance, ref int __result)
+    public static void Postfix(Plant __instance, ref int __result)
     {
         if (__result == 0)
         {

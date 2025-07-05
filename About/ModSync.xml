@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>0da6d135-392b-4671-9360-1c4e441e9a06</ID>
   <ModName>Farming Expansion</ModName>
-  <Version>1.5.0</Version>
+  <Version>1.6.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,3 +12,4 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
+

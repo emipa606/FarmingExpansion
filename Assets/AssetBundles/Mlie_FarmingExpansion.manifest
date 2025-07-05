@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 1585974705
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0dfe4c0c23244f7b2437fafe604296bf
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 0dfe4c0c23244f7b2437fafe604296bf
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Fungicide/Fungicide_a.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Herbicide/Herbicide_c.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Pesticide/Pesticide_a.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Fungicide/Fungicide_c.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/DDT/DDT_a.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Precursor/Precursor_b.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/UI/Commands/ApplyChemicals.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Precursor/Precursor_c.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Pesticide/Pesticide_b.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Plants/Kudzu/KudzuD.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Pesticide/Pesticide_c.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Plants/Kudzu/Kudzu_LeaflessB.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/DDT/DDT_c.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Plants/Kudzu/KudzuB.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Precursor/Precursor_a.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/ChemicalSpray/ChemicalSpray_c.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Plants/Kudzu/Kudzu_LeaflessA.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Plants/Kudzu/KudzuA.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Plants/Kudzu/KudzuC.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/ChemicalSpray/ChemicalSpray_a.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Fungicide/Fungicide_b.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Herbicide/Herbicide_a.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/Herbicide/Herbicide_b.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/ChemicalSpray/ChemicalSpray_b.png
+- Assets/Data/Mlie.FarmingExpansion/Textures/Things/Pesticides/DDT/DDT_b.png
+Dependencies: []

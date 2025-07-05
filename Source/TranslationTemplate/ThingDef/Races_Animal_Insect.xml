@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Cropeater -->
+  <FE_CropEaterInsect.label>Cropeater</FE_CropEaterInsect.label>
+  <!-- EN: A small beetle that enjoys devouring plants. -->
+  <FE_CropEaterInsect.description>A small beetle that enjoys devouring plants.</FE_CropEaterInsect.description>
+  <!-- EN: mandibles -->
+  <FE_CropEaterInsect.tools.mandibles.label>mandibles</FE_CropEaterInsect.tools.mandibles.label>
+</LanguageData>

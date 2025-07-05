@@ -31,7 +31,7 @@ public class UseChemicalWorkGiver : WorkGiver_Grower
             return false;
         }
 
-        if (!(c.GetZone(pawn.Map) is Zone_Growing))
+        if (c.GetZone(pawn.Map) is not Zone_Growing)
         {
             return false;
         }
@@ -121,10 +121,7 @@ public class UseChemicalWorkGiver : WorkGiver_Grower
 
     public override Job JobOnCell(Pawn pawn, IntVec3 cell, bool forced = false)
     {
-        if (wantedPlantDef == null)
-        {
-            wantedPlantDef = CalculateWantedPlantDef(cell, pawn.Map);
-        }
+        wantedPlantDef ??= CalculateWantedPlantDef(cell, pawn.Map);
 
         return new Job(DefDatabase<JobDef>.GetNamed("FE_UseChemicalJobDef"), cell.GetPlant(pawn.Map),
             closestChemical)
@@ -163,7 +160,7 @@ public class UseChemicalWorkGiver : WorkGiver_Grower
 
     protected override bool ExtraRequirements(IPlantToGrowSettable settable, Pawn pawn)
     {
-        if (!(settable is Zone_Growing zone_Growing))
+        if (settable is not Zone_Growing zone_Growing)
         {
             return false;
         }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: make 3 bio chemicals -->
+  <FE_BioChemicals.label>make 3 bio chemicals</FE_BioChemicals.label>
+  <!-- EN: BioChemicals for the production of chemical spray -->
+  <FE_BioChemicals.description>BioChemicals for the production of chemical spray</FE_BioChemicals.description>
+  <!-- EN: Making chemical spray. -->
+  <FE_BioChemicals.jobString>Making chemical spray.</FE_BioChemicals.jobString>
+  <!-- EN: make 60 chemical spray -->
+  <FE_ChemicalSpray.label>make 60 chemical spray</FE_ChemicalSpray.label>
+  <!-- EN: Chemical Spray -->
+  <FE_ChemicalSpray.description>Chemical Spray</FE_ChemicalSpray.description>
+  <!-- EN: Making chemical spray. -->
+  <FE_ChemicalSpray.jobString>Making chemical spray.</FE_ChemicalSpray.jobString>
+  <!-- EN: make 60 DDT -->
+  <FE_MakeDDT.label>make 60 DDT</FE_MakeDDT.label>
+  <!-- EN: DDT -->
+  <FE_MakeDDT.description>DDT</FE_MakeDDT.description>
+  <!-- EN: Making DDT. -->
+  <FE_MakeDDT.jobString>Making DDT.</FE_MakeDDT.jobString>
+  <!-- EN: make 20 fungicide -->
+  <FE_MakeFungicide.label>make 20 fungicide</FE_MakeFungicide.label>
+  <!-- EN: Fungicide -->
+  <FE_MakeFungicide.description>Fungicide</FE_MakeFungicide.description>
+  <!-- EN: Making fungicide. -->
+  <FE_MakeFungicide.jobString>Making fungicide.</FE_MakeFungicide.jobString>
+  <!-- EN: make 20 herbicide -->
+  <FE_MakeHerbicide.label>make 20 herbicide</FE_MakeHerbicide.label>
+  <!-- EN: Herbicide -->
+  <FE_MakeHerbicide.description>Herbicide</FE_MakeHerbicide.description>
+  <!-- EN: Making herbicide. -->
+  <FE_MakeHerbicide.jobString>Making herbicide.</FE_MakeHerbicide.jobString>
+  <!-- EN: make 20 pesticide -->
+  <FE_MakePesticide.label>make 20 pesticide</FE_MakePesticide.label>
+  <!-- EN: Pesticide -->
+  <FE_MakePesticide.description>Pesticide</FE_MakePesticide.description>
+  <!-- EN: Making pesticide. -->
+  <FE_MakePesticide.jobString>Making pesticide.</FE_MakePesticide.jobString>
+</LanguageData>

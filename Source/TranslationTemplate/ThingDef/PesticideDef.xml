@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Chemical Spray -->
+  <FE_ChemicalSpray.label>Chemical Spray</FE_ChemicalSpray.label>
+  <!-- EN: Prevents weeds, pests and blight. Also increases growthspeed and yeild. -->
+  <FE_ChemicalSpray.description>Prevents weeds, pests and blight. Also increases growthspeed and yeild.</FE_ChemicalSpray.description>
+  <!-- EN: DDT -->
+  <FE_DDT.label>DDT</FE_DDT.label>
+  <!-- EN: Prevents weeds, pests and blight but will cause the yeild to be lowered. -->
+  <FE_DDT.description>Prevents weeds, pests and blight but will cause the yeild to be lowered.</FE_DDT.description>
+  <!-- EN: Fungicide -->
+  <FE_Fungicide.label>Fungicide</FE_Fungicide.label>
+  <!-- EN: Prevents blight on crops -->
+  <FE_Fungicide.description>Prevents blight on crops</FE_Fungicide.description>
+  <!-- EN: Herbicide -->
+  <FE_Herbicide.label>Herbicide</FE_Herbicide.label>
+  <!-- EN: Prevents weeds in the fields -->
+  <FE_Herbicide.description>Prevents weeds in the fields</FE_Herbicide.description>
+  <!-- EN: Pesticide -->
+  <FE_Pesticide.label>Pesticide</FE_Pesticide.label>
+  <!-- EN: Prevents pests from eating you crops -->
+  <FE_Pesticide.description>Prevents pests from eating you crops</FE_Pesticide.description>
+</LanguageData>

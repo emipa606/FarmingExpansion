@@ -102,24 +102,6 @@ internal static class Utility
 
                 break;
             case "FE_DDT":
-                if (ChemicalAddedCheck.FungicideAppliedOnto.Contains(plant) &&
-                    ChemicalAddedCheck.HerbicideAppliedOnto.Contains(plant) &&
-                    ChemicalAddedCheck.PesticideAppliedOnto.Contains(plant))
-                {
-                    return false;
-                }
-
-                if (ChemicalAddedCheck.DDTAppliedOnto.Contains(plant))
-                {
-                    return false;
-                }
-
-                if (ChemicalAddedCheck.ChemicalSprayAppliedOnto.Contains(plant))
-                {
-                    return false;
-                }
-
-                break;
             case "FE_ChemicalSpray":
                 if (ChemicalAddedCheck.FungicideAppliedOnto.Contains(plant) &&
                     ChemicalAddedCheck.HerbicideAppliedOnto.Contains(plant) &&

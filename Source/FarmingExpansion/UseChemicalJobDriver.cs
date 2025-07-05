@@ -193,7 +193,7 @@ public class UseChemicalJobDriver : JobDriver
                             return false;
                         }
 
-                        if (!(cellBeingChecked.GetZone(pawn.Map) is Zone_Growing))
+                        if (cellBeingChecked.GetZone(pawn.Map) is not Zone_Growing)
                         {
                             return false;
                         }

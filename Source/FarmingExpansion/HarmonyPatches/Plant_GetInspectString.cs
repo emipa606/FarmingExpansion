@@ -6,12 +6,10 @@ using Verse;
 
 namespace FarmingExpansion;
 
-[HarmonyPatch(typeof(Plant))]
-[HarmonyPatch("GetInspectString")]
-internal static class PatchPlantInspectString
+[HarmonyPatch(typeof(Plant), nameof(Plant.GetInspectString))]
+internal static class Plant_GetInspectString
 {
-    [HarmonyPostfix]
-    public static void AddChemicalInfoToInspectString(Plant __instance, ref string __result)
+    public static void Postfix(Plant __instance, ref string __result)
     {
         var stringBuilder = new StringBuilder();
         if (ChemicalAddedCheck.FungicideAppliedOnto.Contains(__instance))

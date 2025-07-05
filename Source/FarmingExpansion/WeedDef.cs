@@ -16,7 +16,7 @@ internal class WeedDef : Plant
         }
     }
 
-    public void TryReproduceNow()
+    private void TryReproduceNow()
     {
         GenRadial.ProcessEquidistantCells(Position, 4f, delegate(List<IntVec3> cells)
         {
