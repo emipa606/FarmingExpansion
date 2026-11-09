@@ -34,13 +34,9 @@ internal static class Utility
                 continue;
             }
 
-            foreach (var queuedJob in queuedJobsOfSpecifiedType)
+            foreach (var queuedJob in queuedJobsOfSpecifiedType.Where(j =>
+                         extraValidator == null || extraValidator(j.job)))
             {
-                if (extraValidator != null && !extraValidator(queuedJob.job))
-                {
-                    continue;
-                }
-
                 action(queuedJob.job, otherColonist);
             }
         }

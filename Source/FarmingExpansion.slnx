@@ -3,4 +3,42 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="FarmingExpansion/FarmingExpansion.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs/PlantsDef/">
+    <File Path="../1.7/Defs/ThingDefs/PlantsDef/PlantDef.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs/PesticidesDef/">
+    <File Path="../1.7/Defs/ThingDefs/PesticidesDef/PesticideDef.xml" />
+    <File Path="../1.7/Defs/ThingDefs/PesticidesDef/PrecursorDef.xml" />
+  </Folder>
+  <Folder Name="/XML/Patches/">
+    <File Path="../Patches/BeerPatches.xml" />
+    <File Path="../Patches/ChemicalSprayPatches.xml" />
+    <File Path="../Patches/MilkPatches.xml" />
+    <File Path="../Patches/PrecursorPatch.xml" />
+    <File Path="../Patches/TobaccoPatches.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/WorkGiverDefs/">
+    <File Path="../1.7/Defs/WorkGiverDefs/WorkerDef.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/Incidents/">
+    <File Path="../1.7/Defs/Incidents/IncidentsDefs.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/FE_Language.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/JobDriverDefs/">
+    <File Path="../1.7/Defs/JobDriverDefs/JobDriverDef.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/RecipeDefs/">
+    <File Path="../1.7/Defs/RecipeDefs/RecipeDefs.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Races/">
+    <File Path="../1.7/Defs/ThingDefs_Races/Races_Animal_Insect.xml" />
+  </Folder>
 </Solution>

@@ -7,17 +7,16 @@ namespace FarmingExpansion;
 
 public class UseChemicalJobDriver : JobDriver
 {
-    private float applyChemicalWorkDone;
-
     private FarmingExpansion_Chemical ChemicalDef;
+    private float applyChemicalWorkDone;
 
     // The targeted plant
     private Plant Plant => (Plant)job.GetTarget(TargetPlant).Thing;
 
     //A generic representation of the objects used - only used as a parameter
     // TargetIndex.A & B can be used directly, but it can be a bit ambiguous
-    private TargetIndex TargetPlant => TargetIndex.A;
-    private TargetIndex TargetChemical => TargetIndex.B;
+    private static TargetIndex TargetPlant => TargetIndex.A;
+    private static TargetIndex TargetChemical => TargetIndex.B;
 
     public override bool TryMakePreToilReservations(bool errorOnFailed)
     {

@@ -139,7 +139,7 @@ public class UseChemicalWorkGiver : WorkGiver_Grower
     ///     the field work
     /// </param>
     /// <returns>How many plants the pawn will apply chemicals onto within this job</returns>
-    private int PlantsOtherColonistsApplyPesticideOnto(Pawn otherColonist, int jobCountOfOtherColonist)
+    private static int PlantsOtherColonistsApplyPesticideOnto(Pawn otherColonist, int jobCountOfOtherColonist)
     {
         // If there are yet pesticide items to carry...
         if (jobCountOfOtherColonist == 0)
@@ -173,7 +173,7 @@ public class UseChemicalWorkGiver : WorkGiver_Grower
     /// <summary>
     ///     Finds and returns the closest, reachable, unforbidden, pesticide
     /// </summary>
-    private Thing FindChemical(Pawn pawn, ThingDef chemicalDef)
+    private static Thing FindChemical(Pawn pawn, ThingDef chemicalDef)
     {
         return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(chemicalDef),
             PathEndMode.ClosestTouch, TraverseParms.For(pawn), 9999f, predicate);

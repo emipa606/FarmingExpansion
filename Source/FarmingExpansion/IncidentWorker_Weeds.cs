@@ -66,7 +66,7 @@ public class IncidentWorker_Weeds : IncidentWorker_CropBlight
         GenSpawn.Spawn(weedDef, cell, map);
     }
 
-    private float WeedChance(IntVec3 c, IntVec3 root, float radiusFactor)
+    private static float WeedChance(IntVec3 c, IntVec3 root, float radiusFactor)
     {
         var x = c.DistanceTo(root) / radiusFactor;
         return WeedChancePerRadius.Evaluate(x);
@@ -123,7 +123,7 @@ public class IncidentWorker_Weeds : IncidentWorker_CropBlight
         return !ChemicalAddedCheck.ChemicalSprayAppliedOnto.Contains(plant);
     }
 
-    private bool TryFindRandomWeedablePlant(Map map, out Plant plant)
+    private static bool TryFindRandomWeedablePlant(Map map, out Plant plant)
     {
         var result = (from x in map.listerThings.ThingsInGroup(ThingRequestGroup.Plant)
             where IsWeedabe((Plant)x)

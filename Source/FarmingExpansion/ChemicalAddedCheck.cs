@@ -59,13 +59,11 @@ internal class ChemicalAddedCheck : GameComponent
                          ChemicalSprayAppliedOnto
                      })
             {
-                foreach (var plant in list.ToList())
+                foreach (var plant in list.Where(plant => plant == null || plant != plant.Position.GetPlant(plant.Map))
+                             .ToList())
                 {
                     // If the same plant is not on the cell, this map does contain that plant
-                    if (plant == null || plant != plant.Position.GetPlant(plant.Map))
-                    {
-                        list.Remove(plant);
-                    }
+                    list.Remove(plant);
                 }
             }
         });

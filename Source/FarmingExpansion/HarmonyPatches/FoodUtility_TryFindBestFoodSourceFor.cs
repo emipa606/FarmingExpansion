@@ -14,7 +14,6 @@ internal static class FoodUtility_TryFindBestFoodSourceFor
             return;
         }
 
-        //Log.Message($"{foodSource} - {eater}");
         if (!ChemicalAddedCheck.PesticideAppliedOnto.Contains((Plant)foodSource) &&
             !ChemicalAddedCheck.DDTAppliedOnto.Contains((Plant)foodSource) &&
             !ChemicalAddedCheck.ChemicalSprayAppliedOnto.Contains((Plant)foodSource))

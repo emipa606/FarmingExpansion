@@ -30,10 +30,6 @@ public class IncidentWorker_CropEaters : IncidentWorker
                 continue;
             }
 
-            if (plant.LifeStage != PlantLifeStage.Growing && plant.LifeStage != PlantLifeStage.Mature)
-            {
-            }
-
             if (ChemicalAddedCheck.PesticideAppliedOnto.Contains(plant))
             {
                 continue;
@@ -72,9 +68,6 @@ public class IncidentWorker_CropEaters : IncidentWorker
         {
             var plant = plants.RandomElement();
             plants.Remove(plant);
-            //bool flag2 = false;
-            //if (spawnedBugs >= spawnLimit) break;
-            //if (spawnedBugs == 0) { flag2 = true; }
 
             var pawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("FE_CropEaterInsect"));
             bugs = new TargetInfo(plant.Position, plant.Map);
